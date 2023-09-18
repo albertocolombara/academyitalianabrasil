@@ -1,0 +1,43 @@
+footer {
+    background-color: $color-primary;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+    & .footer {
+        display: flex;
+        justify-content: space-between;
+
+        & h4, & a, & span {
+            color: white;
+        }
+
+        & a {
+            text-decoration: none;
+            transition: opacity .4s ease;
+        }
+
+        & li {
+            margin-top: 10px;
+        }
+
+        & a:hover {
+            opacity: .5;
+        }
+
+        &__contato {
+            margin-top: 10px;
+
+            & span {
+                word-break: break-all;
+            }
+
+            & h4 {
+                margin-bottom: 10px;
+            }
+
+            & div {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,128 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: $calibri;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    color: #505050;
+    line-height: 24px;
+}
+
+// .opacity {
+//     opacity: .4;
+// }
+
+@keyframes aniTop {
+    0% {
+        padding: 0 30px;
+    }
+
+    100% {
+        padding: 30px;
+    }
+}
+
+.before-title {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 7.2px;
+    text-transform: uppercase;
+}
+
+.section-p {
+    color: #7685A3;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.section-title {
+    padding-bottom: 20px;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -3.114px;
+    background: var(--grad, linear-gradient(272deg, #BECA47 -3.1%, #18418E 99.49%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.padding-lr {
+    margin: 0 auto;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.btn-primary {
+    padding: 10px 24px;
+    background-color: white;
+    text-decoration: none;
+    font-size: 18px;
+    color: $dark-blue;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: all .4s ease;
+}
+
+.btn-primary:hover {
+    opacity: .5;
+}
+
+.btn-outline {
+    padding: 10px 24px;
+    border: 1px solid $dark-blue;
+    text-decoration: none;
+    font-size: 18px;
+    color: $dark-blue;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: all .4s ease;
+}
+
+.btn-outline:hover {
+    background-color: $dark-blue;
+    color: white;
+}
+
+.home-wrapper {
+    background: url("/img/wrapper.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    & h3 {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        text-align: center;
+        color: white;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -2.1px;     
+    }
+}

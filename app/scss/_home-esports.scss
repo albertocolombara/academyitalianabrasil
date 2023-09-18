@@ -1,0 +1,30 @@
+.esports {
+    margin: 120px 0;
+    background: url("/img/esports.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &__text {
+        color: white;
+        text-align: center;
+        padding: 150px 0;
+
+        & h2 {
+            color: white;
+            padding-bottom: 20px;
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: -3.114px;
+        } 
+
+        & p {
+            color: white;
+            width: 70%;
+            margin: 0 auto;
+            margin-bottom: 40px;
+        }
+    }
+}

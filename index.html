@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academy Italiana Brasil</title>
+
+    <link rel="stylesheet" href="dist/style.css">
+</head>
+<body>
+    <header>
+        <nav class="padding-lr">
+            <a href="index.html"><img class="logo" src="img/logos/logo.png" alt="Academy Italiana Brasil"></a>
+            <ul class="menu">
+                <div class="menu__close" id="menuClose"><img src="img/icons/xmark-solid.svg" alt=""></div>
+                <li class="menu__link"><a href="#">Conheça</a></li>
+                <li class="menu__link" id="temSubMenu">
+                    <a style="cursor: pointer;">Nossos times<img class="down" src="img/icons/down.svg" style="margin-left: 6px;"></a>
+                    <ul class="sub-menu" id="timesSubMenu">
+                        <li><a href="#">Futebol</a></li>
+                        <li><a href="#">Tênis de Praia</a></li>
+                        <li><a href="#">Vôlei de Praia</a></li>
+                        <li><a href="#">Futmesa</a></li>
+                        <li><a href="#">Esports</a></a></li>
+                    </ul>
+                </li>
+                <li class="menu__link"><a href="#">Escolinha</a></li>
+                <li class="menu__link"><a href="#">Contato</a></li>
+                <div class="menu__social">
+                    <a href="https://www.facebook.com.br" target="_blank" rel="noopener noreferrer"><img src="img/icons/facebook.svg" alt="facebook"></a>
+                    <a href="https://www.instagram.com.br" target="_blank" rel="noopener noreferrer"><img src="img/icons/instagram.svg" alt="instagram"></a>
+                </div>
+            </ul>
+            <div class="menu__open" id="menuOpen">
+                <img src="img/icons/bx-menu.svg" alt="">
+            </div>
+            
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Academy <br>Italiana Brasil</h1>
+        <span class="stars">
+            <img src="img/icons/Star.svg" alt="star">
+            <img src="img/icons/Star.svg" alt="star">
+            <img src="img/icons/Star.svg" alt="star">
+        </span>
+        <p>Os melhores estão aqui.</p>
+    </div>
+
+    <div class="partners">
+        <div class="partners__list padding-lr">
+            <img src="img/logos/giorjo.png" alt="">
+            <img src="img/logos/nhuen.png" alt="">
+            <img src="img/logos/ma2.png" alt="">
+            <img src="img/logos/kama.png" alt="">
+        </div>
+    </div>
+
+    <article class="conheca padding-lr">
+        <div class="conheca__left">
+            <span class="before-title">Sobre</span>
+            <h2 class="section-title">O que é a Academy <br>Italiana Brasil?</h2>
+            <p class="section-p">A Academy Italiana Brasil é um novo projeto que foi criado seguindo as metodologias da Academy Italiana, uma escolinha de futebol internacional que agora está presente no Brasil.</p>
+            <a class="btn-outline" href="conheca.html">Conheça</a>
+        </div>
+        <div class="conheca__right">
+            <img src="img/conheca.jpg" alt="Sobre">
+        </div>
+    </article>
+
+    <article class="objetivo padding-lr">
+        <div class="objetivo__top">
+            <span class="before-title">Objetivo</span>
+            <h2 class="section-title">Criar times competitivos</h2>
+            <p class="section-p">Nosso grande objetivo é ter times competitivos em várias modalidades esportivas, criando um ambiente de competição e diversão para os participantes, também temos a meta de expandir nosso time para todos os cantos do Brasil.</p>
+        </div>
+        <div class="objetivo__cards">
+            <div class="objetivo__cards-card">
+                <img src="img/icons/soccer.svg" alt="Futebol">
+            </div>
+            <div class="objetivo__cards-card">
+                <img src="img/icons/volley.svg" alt="Volei">
+            </div>
+            <div class="objetivo__cards-card">
+                <img src="img/icons/tennis.svg" alt="Tenis">
+            </div>
+            <div class="objetivo__cards-card">
+                <img src="img/icons/controller.svg" alt="Esports">
+            </div>
+        </div>
+    </article>
+
+    <div class="home-wrapper">
+        <h3 class="padding-lr">Nossa paixão pelos esportes nos leva a querer alcançar outros patamares. </h3>
+    </div>
+
+    <article class="modalidades">
+        <div class="modalidades__top padding-lr">
+            <span class="before-title">Modalidades</span>
+            <h2 class="section-title">Quais esportes oferecemos</h2>
+            <p class="section-p">Por enquanto oferecemos esportes que temos experiência em nosso âmbito, mas uma das metas do projeto é expandir essa gama de modalidades, criando mais alternativas para todos.</p>
+        </div>
+        <div class="modalidades__cards">
+            <div class="card" style="background-image: url('img/soccer.jpg');">
+                <div class="card__overlay">
+                    <h1>Futebol</h1>
+                </div>
+            </div>
+            <div class="card" style="background-image: url('img/beach-tennis.jpg');">
+            <div class="card__overlay">
+                <h1>Beach<br> Tennis</h1>
+            </div>
+            </div>
+            <div class="card" style="background-image: url('img/beach-volley.jpg');">
+            <div class="card__overlay">
+                <h1>Beach<br> Volley</h1>
+            </div>
+            </div>
+            <div class="card" style="background-image: url('img/futmesa.jpg');">
+            <div class="card__overlay">
+                <h1>Futmesa</h1>
+            </div>
+            </div>
+        </div>   
+    </article>
+
+    <section class="esports">
+        <div class="esports__text padding-lr">
+            <span class="before-title">Esports</span>
+            <h2>O futuro chegou</h2>
+            <p class="section-p">Os eSports chegaram e já são uma realidade. O nosso projeto também quer participar do mundo competitivo eletrônico com times formados por grandes talentos.</p>
+            <a href="https://nhuen.com.br" class="btn-primary">Saiba mais</a>
+        </div>
+    </section>
+
+    <article class="escola padding-lr">
+        <div class="escola__left">
+            <img src="img/academy-equipe.jpg" alt="Equipe Academy Italiana">
+        </div>
+        <div class="escola__right">
+            <span class="before-title">Academy Italiana</span>
+            <h2 class="section-title">Experiência em criar <br>futuros campeões</h2>
+            <p class="section-p">Nosso projeto provém de uma escolinha de futebol, onde temos experiência e reconhecimento no ramo. Conheça mais sobre nossas escolinhas de futebol no Brasil.</p>
+            <a class="btn-outline" href="academy-italiana.html">Conheça</a>
+        </div>
+    </article>
+
+    <footer>
+        <div class="footer padding-lr">
+            <!-- <a class="logo-footer"><img src="img/logos/logo.png" alt="Logo"></a> -->
+            <ul class="footer__menu">
+                <li><h4>Menu</h4></li>
+                <li><a href="conheca.html">Conheça</a></li>
+                <li><a href="academy-italiana.html">Escolinha</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+            <ul class="footer__times">
+                <li><h4>Nossos times</h4></li>
+                <li><a href="times/futebol.html">Futebol</a></li>
+                <li><a href="times/volei-de-praia.html">Vôlei de praia</a></li>
+                <li><a href="times/tenis-de-praia.html">Tênis de praia</a></li>
+                <li><a href="times/futmesa.html">Futmesa</a></li>
+                <li><a href="https://nhuen.com.br">Esports</a></li>
+            </ul>
+            <ul class="footer__redes">
+                <li><h4>Redes sociais</h4></li>
+                <li><a href="https://instagram.com.br/academyitalianabrasil">Instagram</a></li>
+                <li><a href="https://facebook.com.br/academyitalianabrasil">Facebook</a></li>
+            </ul>
+            <div class="footer__contato">
+                <div class="footer__contato-email">
+                    <h4>Email</h4>
+                    <span>info@academyitalianabrasil.com.br</span>
+                </div>
+                <div class="footer__contato-fone">
+                    <h4>Telefone</h4>
+                    <span>+55 85 988888888</span>
+                </div>
+            </div>
+        </footer>
+        </div>
+        
+    
+<script src="script.js"></script>
+
+</body>
+</html>

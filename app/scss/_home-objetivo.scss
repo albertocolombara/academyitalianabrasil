@@ -1,0 +1,33 @@
+.objetivo {
+    padding-top: 160px;
+    padding-bottom: 160px;
+
+    &__top {
+        text-align: center;
+
+        & p {
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
+
+    &__cards {
+        padding-top: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+        flex-wrap: wrap;
+
+        &-card {
+            width: 180px;
+            height: 180px;
+            border-radius: 17px;
+            background: #FFF;
+            box-shadow: 4px 4px 41px 4px rgba(0, 0, 0, 0.25);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

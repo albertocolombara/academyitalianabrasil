@@ -1,0 +1,44 @@
+.hero {
+    background-image: url(/img/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 80px;
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    & h1 {
+        font-size: 82px;
+        color: white;
+        font-weight: 700;
+        line-height: 107%;  
+    }
+
+    & .stars {
+        margin: 20px 0;
+    }
+
+    & p {
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: -1.28px;
+        color: white;
+    }
+}
+
+.partners {
+    background: $color-primary;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+    }
+}
