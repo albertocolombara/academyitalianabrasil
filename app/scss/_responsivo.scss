@@ -84,6 +84,33 @@
             } 
         }
     }
+
+    .conheca-projeto {
+    
+        &__container {
+            margin: 0 30px;
+        }
+    
+        & h2 {
+            font-size: 36px;
+        }
+    }
+
+    .conheca-esportes {
+        gap: 20px;
+    
+        &__left {
+    
+            & h2 {
+                font-size: 42px;
+            }
+        } 
+    
+        &__right {
+            gap: 15px;
+    
+        }
+    }
 }
 
 @media (max-width: 600px) {
@@ -237,36 +264,83 @@
         }
     }
 
-    @media (max-width: 400px) {
-
-        header {
-
-            nav {
-                justify-content: space-around;
-
-                .logo {
-                    max-width: 80px;
-                }
-
-                & .menu {
-                    
-                    & a {
-                        font-size: 24px;
-                    }
-                }
-            }
-        }
-
-        .padding-lr {
-            padding-left: 10px;
-            padding-right: 10px;
-        }
-
-        .partners {
+    .conheca-projeto {
+        padding-top: 15px;
+        padding-bottom: 15px;
     
-            &__list {
-                grid-template-columns: 1fr;
+        &__container {
+            flex-direction: column;
+            margin: 0 10px;
+            padding: 30px;
+        }
+    
+        // & h2 {
+        //     font-size: 36px;
+        // }
+    
+        & h2::after {
+            display: none;
+        }
+    }
+
+    .conheca-esportes {
+        flex-direction: column;
+    
+        &__left {
+    
+            & h2 {
+                margin-bottom: 20px;
             }
+        } 
+    
+        &__right {
+            grid-template-columns: 1fr;
+            gap: 30px;
+    
+            & .item-esporte {
+                padding: 60px 40px;
+
+                & span {
+                    font-size: 24px;
+                }
+    
+                & img {
+                    width: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+
+    header {
+
+        nav {
+            justify-content: space-around;
+
+            .logo {
+                max-width: 80px;
+            }
+
+            & .menu {
+                
+                & a {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+
+    .padding-lr {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .partners {
+
+        &__list {
+            grid-template-columns: 1fr;
         }
     }
 }

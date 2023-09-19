@@ -1,0 +1,119 @@
+.page-hero {
+    background: url("/img/page-hero.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+
+    & h1 {
+        font-size: 64px;
+        color: white;
+    }
+}
+
+.conheca-projeto {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $light-grey;
+        margin: 0 90px;
+        padding: 40px;
+        border-radius: 6px;
+    }
+
+    & h2, & p {
+        flex: 1;
+    }
+
+    & h2 {
+        font-size: 48px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        word-wrap: break-all;
+    }
+
+    & h2::after {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 1px;
+        background-color: $light-grey;
+        margin-right: 25px;
+    }
+}
+
+.page-wrapper {
+    width: 100%;
+    padding-bottom: 120px;
+    margin-top: 80px;
+
+    &__container {
+        background-color: $dark-blue;
+        padding: 60px 0;
+        border-radius: 6px;
+
+        & h3 {
+            font-size: 32px;
+            color: white;
+            text-align: center;
+        }
+    }
+}
+
+.conheca-esportes {
+    padding-bottom: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    &__left {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+
+        & h2 {
+            color: $light-grey;
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: -3.114px;
+        }
+    } 
+
+    &__right {
+        flex: 1.22;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+        & .item-esporte {
+            box-shadow: 1px 1px 10px rgba(0,0,0,.4);
+            padding: 40px 20px;
+            max-height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            border-radius: 3px;
+
+            & img {
+                width: 40px;
+            }
+        }
+    }
+}
