@@ -22,7 +22,7 @@
 
         & nav {
 
-            & .menu {
+            .menu {
                 display: none;
                 align-items: center;
                 justify-content: center;
@@ -46,10 +46,10 @@
                 & #temSubMenu {
                     position: relative;
 
-                    & .sub-menu {
+                    .sub-menu {
                         background-color: white;
                         
-                        & a{
+                        a {
                             color: $color-primary;
                             font-size: 18px;
                         }
@@ -57,7 +57,6 @@
 
                 }
             
-
                 &__close, &__open {
                     display: block;
                 }
@@ -69,7 +68,7 @@
                 }
             }
 
-            & .menuAtivo {
+            .menuAtivo {
                 display: flex;
             }
         }
@@ -79,7 +78,7 @@
 
         &__list {
 
-            & img {
+            img {
                 max-width: 80px;
             } 
         }
@@ -91,7 +90,7 @@
             margin: 0 30px;
         }
     
-        & h2 {
+        h2 {
             font-size: 36px;
         }
     }
@@ -116,11 +115,11 @@
 @media (max-width: 600px) {
     .hero {
     
-        & h1 {
+        h1 {
             font-size: 52px;
         }
     
-        & p {
+        p {
             font-size: 24px;
             letter-spacing: -0.5px;
         }
@@ -146,7 +145,7 @@
             height: 200px;
             width: 100%;
 
-            & img {
+            img {
                 object-fit: cover;
                 width: 100%;
                 height: 300px;
@@ -188,25 +187,9 @@
             }
         }
     
-        &__cards {
-            flex-direction: column;
+        &__bottom {
+            grid-template-columns: 1fr;
         }
-    
-        & .card {
-            height: 30vh;
-            min-height: 100px;
-            transition: min-height .2s ease;
-    
-            &:hover {
-                min-width: 100%;
-                min-height: 500px;
-                margin: 10px 0;
-            }
-
-            &__overlay {
-                font-size: 32px;
-            }
-        } 
     }
 
     .esports {
@@ -235,7 +218,7 @@
             flex: 1;
             width: 100%;
 
-            & img {
+            img {
                 width: 100%;
                 height: 400px;
                 object-fit: cover;
@@ -246,7 +229,7 @@
         &__right {
             flex: 1.22;
     
-            & p {
+            p {
                 margin-bottom: 40px;
             }
         }
@@ -258,7 +241,7 @@
             flex-direction: column;
             gap: 30px;
 
-            & h4, & a, & span {
+            h4, a, span {
                 font-size: 24px;
             }
         }
@@ -278,7 +261,7 @@
         //     font-size: 36px;
         // }
     
-        & h2::after {
+        h2::after {
             display: none;
         }
     }
@@ -288,7 +271,7 @@
     
         &__left {
     
-            & h2 {
+            h2 {
                 margin-bottom: 20px;
             }
         } 
@@ -297,14 +280,14 @@
             grid-template-columns: 1fr;
             gap: 30px;
     
-            & .item-esporte {
+            .item-esporte {
                 padding: 60px 40px;
 
-                & span {
+                span {
                     font-size: 24px;
                 }
     
-                & img {
+                img {
                     width: 40px;
                 }
             }
@@ -323,9 +306,9 @@
                 max-width: 80px;
             }
 
-            & .menu {
+            .menu {
                 
-                & a {
+                a {
                     font-size: 24px;
                 }
             }

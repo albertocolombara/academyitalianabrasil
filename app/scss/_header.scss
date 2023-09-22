@@ -7,12 +7,12 @@ header {
     background-color: $color-primary;
     z-index: 100;
 
-    & nav {
+    nav {
         display: flex;
         justify-content: space-between;
         height: 100%;
 
-        & .menu {
+        .menu {
             display: flex;
             gap: 30px;
             align-self: center;
@@ -23,18 +23,17 @@ header {
             }
 
             &__link {
-                font-size: 18px;
                 font-weight: bold;
 
-                & a{
+                a{
                     text-decoration: none;
                     color: white;
-                    font-size: 18px;
+                    font-size: 16px;
                     font-style: normal;
                     line-height: normal;
                 }
 
-                & .sub-menu {
+                .sub-menu {
                     margin-top: 20px;
                     position: absolute;
                     background-color: $color-primary;
@@ -46,32 +45,32 @@ header {
                     animation: aniTop .7s cubic-bezier(0.165, 0.84, 0.44, 1);
                     box-shadow: 1px 1px 10px rgb(0, 0, 0, .5);
                     
-                    & a {
+                    a {
                         margin-right: 30px;
                         color: white;
                     }
                     
                 }
 
-                & .active {
+                .active {
                     display: flex;
                 }
 
-                & .down {
+                .down {
                     transition: transform .5s ease;
                 }
 
-                & .transform {
+                .transform {
                     transition: transform .5s ease;
                     transform: rotate(180deg);
                 }
             }
         }
 
-        & .menu__social {
+        .menu__social {
             align-self: center;
 
-            & img {
+            img {
                 width: 24px;
                 margin-left: 10px;
             }

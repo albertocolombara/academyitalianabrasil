@@ -10,7 +10,7 @@ body {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-    font-family: $calibri;
+    font-family: $font-family;
     overflow-x: hidden;
 }
 
@@ -22,32 +22,18 @@ li {
     list-style: none;
 }
 
-p {
-    color: #505050;
-    line-height: 24px;
-}
-
 // .opacity {
 //     opacity: .4;
 // }
 
-@keyframes aniTop {
-    0% {
-        padding: 0 30px;
-    }
-
-    100% {
-        padding: 30px;
-    }
-}
-
 .before-title {
-    font-size: 24px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 7.2px;
     text-transform: uppercase;
+    opacity: .7;
 }
 
 .section-p {
@@ -65,7 +51,7 @@ p {
     font-weight: 400;
     line-height: normal;
     letter-spacing: -3.114px;
-    background: var(--grad, linear-gradient(272deg, #BECA47 -3.1%, #18418E 99.49%));
+    background: var(--grad, linear-gradient(272deg, #bdcc14 -3.1%, #18418E 99.49%));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -78,10 +64,11 @@ p {
 }
 
 .btn-primary {
-    padding: 10px 24px;
+    padding: 12px 24px;
     background-color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
+    text-transform: uppercase;
     color: $dark-blue;
     border-radius: 6px;
     font-weight: bold;
@@ -93,10 +80,11 @@ p {
 }
 
 .btn-outline {
-    padding: 10px 24px;
+    padding: 12px 24px;
     border: 1px solid $dark-blue;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
+    text-transform: uppercase;
     color: $dark-blue;
     border-radius: 6px;
     font-weight: bold;
@@ -114,7 +102,7 @@ p {
     background-position: center;
     background-repeat: no-repeat;
 
-    & h3 {
+    h3 {
         padding-top: 120px;
         padding-bottom: 120px;
         text-align: center;
@@ -124,5 +112,22 @@ p {
         font-weight: 400;
         line-height: normal;
         letter-spacing: -2.1px;     
+    }
+}
+
+@keyframes aniTop {
+    0% {
+        padding: 0 30px;
+    }
+
+    100% {
+        padding: 30px;
+    }
+}
+
+@keyframes floating {
+
+    100% {
+        transform: translateY(-15%);
     }
 }

@@ -10,24 +10,32 @@
     justify-content: center;
     flex-direction: column;
 
-    & h1 {
-        font-size: 82px;
-        color: white;
-        font-weight: 700;
-        line-height: 107%;  
+    &__container{
+        margin: 0;
+
+        h1 {
+            font-size: 62px;
+            color: white;
+            font-weight: 400;
+            line-height: 107%;  
+            letter-spacing: -3.5px;
+            margin: 20px 0;
+        }
+    
+        .stars {
+            margin: 20px 0;
+        }
+    
+        p {
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: -1.28px;
+            color: white;
+        }
     }
 
-    & .stars {
-        margin: 20px 0;
-    }
 
-    & p {
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 400;
-        letter-spacing: -1.28px;
-        color: white;
-    }
 }
 
 .partners {

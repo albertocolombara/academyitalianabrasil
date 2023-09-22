@@ -26,10 +26,10 @@
                 </li>
                 <li class="menu__link"><a href="#">Escolinha</a></li>
                 <li class="menu__link"><a href="#">Contato</a></li>
-                <div class="menu__social">
+                <!-- <div class="menu__social">
                     <a href="https://www.facebook.com.br" target="_blank" rel="noopener noreferrer"><img src="img/icons/facebook.svg" alt="facebook"></a>
                     <a href="https://www.instagram.com.br" target="_blank" rel="noopener noreferrer"><img src="img/icons/instagram.svg" alt="instagram"></a>
-                </div>
+                </div> -->
             </ul>
             <div class="menu__open" id="menuOpen">
                 <img src="img/icons/bx-menu.svg" alt="">
@@ -38,13 +38,15 @@
     </header>
 
     <section class="hero">
-        <h1>Academy <br>Italiana Brasil</h1>
-        <span class="stars">
-            <img src="img/icons/Star.svg" alt="star">
-            <img src="img/icons/Star.svg" alt="star">
-            <img src="img/icons/Star.svg" alt="star">
-        </span>
-        <p>Os melhores estão aqui.</p>
+        <div class="hero__container padding-lr">
+            <span class="before-title" style="color: white;">Os melhores estão aqui</span>
+            <h1>Academy Italiana Brasil</h1>
+            <span class="stars">
+                <img src="img/icons/Star.svg" alt="star">
+                <img src="img/icons/Star.svg" alt="star">
+                <img src="img/icons/Star.svg" alt="star">
+            </span>
+        </div>
     </section>
 
     <div class="partners">
@@ -94,34 +96,42 @@
         <h3 class="padding-lr">Nossa paixão pelos esportes nos leva a querer alcançar outros patamares. </h3>
     </div>
 
-    <article class="modalidades">
-        <div class="modalidades__top padding-lr">
+    <article class="modalidades padding-lr">
+        <div class="modalidades__top">
             <span class="before-title">Modalidades</span>
             <h2 class="section-title">Quais esportes oferecemos</h2>
             <p class="section-p">Por enquanto oferecemos esportes que temos experiência em nosso âmbito, mas uma das metas do projeto é expandir essa gama de modalidades, criando mais alternativas para todos.</p>
         </div>
-        <div class="modalidades__cards">
-            <div class="card" style="background-image: url('img/soccer.jpg');">
-                <div class="card__overlay">
-                    <h1>Futebol</h1>
+        <div class="modalidades__bottom">
+            <div class="modalidade-item">
+                <img class="modalidade-item__image" src="img/soccer.jpg">
+                <div class="modalidade-item__desc">
+                    <img src="img/icons/32x32-soccer-white.svg" alt="Bola de Futebol">
+                    <span>Futebol</span>
                 </div>
             </div>
-            <div class="card" style="background-image: url('img/beach-tennis.jpg');">
-            <div class="card__overlay">
-                <h1>Beach<br> Tennis</h1>
+            <div class="modalidade-item">
+                <img class="modalidade-item__image" src="img/beach-volley.jpg">
+                <div class="modalidade-item__desc">
+                    <img src="img/icons/32x32-volley-white.svg" alt="Bola de Volei">
+                    <span>Vôlei de Praia</span>
+                </div>
             </div>
+            <div class="modalidade-item">
+                <img class="modalidade-item__image" src="img/beach-tennis.jpg">
+                <div class="modalidade-item__desc">
+                    <img src="img/icons/32x32-tennis-white.svg" alt="Bola de Tênis">
+                    <span>Tênis de Praia</span>
+                </div>
             </div>
-            <div class="card" style="background-image: url('img/beach-volley.jpg');">
-            <div class="card__overlay">
-                <h1>Beach<br> Volley</h1>
+            <div class="modalidade-item">
+                <img class="modalidade-item__image" src="img/futmesa.jpg">
+                <div class="modalidade-item__desc">
+                    <img src="img/icons/32x32-soccer-white.svg" alt="Bola de Futebol">
+                    <span>Futmesa</span>
+                </div>
             </div>
-            </div>
-            <div class="card" style="background-image: url('img/futmesa.jpg');">
-            <div class="card__overlay">
-                <h1>Futmesa</h1>
-            </div>
-            </div>
-        </div>   
+        </div>
     </article>
 
     <section class="esports">

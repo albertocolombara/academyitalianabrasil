@@ -4,49 +4,51 @@
     &__top {
         padding-bottom: 100px;
 
-        & p {
+        p {
             width: 60%;
         }
     }
 
-    &__cards {
-        display: flex;
-        justify-content: center;
+    &__bottom {
         width: 100%;
-    }
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin: 0 auto;
 
-    & .card {
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-        height: 60vh;
-        min-width: 100px;
-        background-position: center;
-        background-size: cover;
-        transition: min-width .2s ease;
-
-        &:hover {
-            min-width: 500px;
-            margin: 0 5px;
-        }
-
-        &:hover .card__overlay {
-            display: flex;
-        }
-
-        &__overlay {
+        .modalidade-item {
+            position: relative;
+            justify-self: center;
             width: 100%;
-            height: 100%;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            background-color: #000000a2;
-            display: none;
-            color: white;
-            font-size: 20px;
-            transition: display 3s ease;
+            cursor: pointer;
+
+            &:hover .modalidade-item__desc{
+                animation: floating .8s infinite alternate linear;
+            }
+
+            &__image {
+                width: 100%;
+                border-radius: 6px;
+                object-fit: cover;
+            }
+
+            &__desc {
+                position: absolute;
+                bottom: 30px;
+                left: 30px;
+                display: flex;
+                align-items: center;
+                
+                span {
+                    color: white;
+                    margin-left: 10px;
+                    font-size: 18px;
+                    font-weight: bold;
+
+                }
+            }
         }
-    } 
+    }
 }
 
 

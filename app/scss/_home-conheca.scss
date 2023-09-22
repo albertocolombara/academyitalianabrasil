@@ -1,13 +1,20 @@
 .conheca {
     padding-top: 120px;
+    padding-bottom: 120px;
     display: flex;
     align-items: center;
     gap: 60px;
+    background-color: #d5dff1;
 
     &__left {
         flex: 1.22;
 
-        & p {
+        .section-title {
+            color: $color-primary;
+            -webkit-text-fill-color: $color-primary;
+        }
+
+        p {
             margin-bottom: 40px;
         }
     }
@@ -15,7 +22,7 @@
     &__right {
         flex: 1;
 
-        & img {
+        img {
             border-radius: 6px;
         }
     }
