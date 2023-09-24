@@ -17,29 +17,25 @@
                 <li class="menu__link" id="temSubMenu">
                     <a style="cursor: pointer;">Nossos times<img class="down" src="img/icons/down.svg" style="margin-left: 6px;"></a>
                     <ul class="sub-menu" id="timesSubMenu">
-                        <li><a href="#">Futebol</a></li>
-                        <li><a href="#">Tênis de Praia</a></li>
-                        <li><a href="#">Vôlei de Praia</a></li>
-                        <li><a href="#">Futmesa</a></li>
-                        <li><a href="#">Esports</a></a></li>
+                        <li><a href="times/futebol.html">Futebol</a></li>
+                        <li><a href="times/tenis-de-praia.html">Tênis de Praia</a></li>
+                        <li><a href="times/volei-de-praia.html">Vôlei de Praia</a></li>
+                        <li><a href="times/futmesa.html">Futmesa</a></li>
+                        <li><a href="https://nhuen.com.br">Esports</a></a></li>
                     </ul>
                 </li>
-                <li class="menu__link"><a href="#">Escolinha</a></li>
-                <li class="menu__link"><a href="#">Contato</a></li>
-                <!-- <div class="menu__social">
-                    <a href="https://www.facebook.com.br" target="_blank" rel="noopener noreferrer"><img src="img/icons/facebook.svg" alt="facebook"></a>
-                    <a href="https://www.instagram.com.br" target="_blank" rel="noopener noreferrer"><img src="img/icons/instagram.svg" alt="instagram"></a>
-                </div> -->
+                <li class="menu__link"><a href="academy-italiana.html">Escolinha</a></li>
+                <li class="menu__link"><a href="contato.html">Contato</a></li>
             </ul>
             <div class="menu__open" id="menuOpen">
-                <img src="img/icons/bx-menu.svg" alt="">
+                <img src="img/icons/bx-menu.svg" alt="Menu">
             </div>
         </nav>
     </header>
 
     <section class="hero">
         <div class="hero__container padding-lr">
-            <span class="before-title" style="color: white;">Os melhores estão aqui</span>
+            <span class="before-title" style="color: white;">Um time. Vários esportes.</span>
             <h1>Academy Italiana Brasil</h1>
             <span class="stars">
                 <img src="img/icons/Star.svg" alt="star">
@@ -51,10 +47,10 @@
 
     <div class="partners">
         <div class="partners__list padding-lr">
-            <img src="img/logos/giorjo.png" alt="">
-            <img src="img/logos/nhuen.png" alt="">
-            <img src="img/logos/ma2.png" alt="">
-            <img src="img/logos/kama.png" alt="">
+            <img src="img/logos/giorjo.png" alt="Logo Giorjo">
+            <img src="img/logos/nhuen.png" alt="Logo Nhuen">
+            <img src="img/logos/ma2.png" alt="Logo MA2">
+            <img src="img/logos/kama.png" alt="Logo Kama">
         </div>
     </div>
 
@@ -63,7 +59,7 @@
             <span class="before-title">Sobre</span>
             <h2 class="section-title">O que é a Academy <br>Italiana Brasil?</h2>
             <p class="section-p">A Academy Italiana Brasil é um novo projeto que foi criado seguindo as metodologias da Academy Italiana, uma escolinha de futebol internacional que agora está presente no Brasil.</p>
-            <a class="btn-outline" href="conheca.html">Conheça</a>
+            <a class="btn-outline" href="sobre.html">Conheça</a>
         </div>
         <div class="conheca__right">
             <img src="img/conheca.jpg" alt="Sobre">
@@ -103,28 +99,28 @@
             <p class="section-p">Por enquanto oferecemos esportes que temos experiência em nosso âmbito, mas uma das metas do projeto é expandir essa gama de modalidades, criando mais alternativas para todos.</p>
         </div>
         <div class="modalidades__bottom">
-            <div class="modalidade-item">
+            <div class="modalidade-item" onclick="location.href='/times/futebol.html'">
                 <img class="modalidade-item__image" src="img/soccer.jpg">
                 <div class="modalidade-item__desc">
                     <img src="img/icons/32x32-soccer-white.svg" alt="Bola de Futebol">
-                    <span>Futebol</span>
+                    <span>Futebol</span> 
                 </div>
             </div>
-            <div class="modalidade-item">
+            <div class="modalidade-item" onclick="location.href='/times/volei-de-praia.html'">
                 <img class="modalidade-item__image" src="img/beach-volley.jpg">
                 <div class="modalidade-item__desc">
                     <img src="img/icons/32x32-volley-white.svg" alt="Bola de Volei">
                     <span>Vôlei de Praia</span>
                 </div>
             </div>
-            <div class="modalidade-item">
+            <div class="modalidade-item" onclick="location.href='/times/tenis-de-praia.html'">
                 <img class="modalidade-item__image" src="img/beach-tennis.jpg">
                 <div class="modalidade-item__desc">
                     <img src="img/icons/32x32-tennis-white.svg" alt="Bola de Tênis">
                     <span>Tênis de Praia</span>
                 </div>
             </div>
-            <div class="modalidade-item">
+            <div class="modalidade-item" onclick="location.href='/times/futmesa.html'">
                 <img class="modalidade-item__image" src="img/futmesa.jpg">
                 <div class="modalidade-item__desc">
                     <img src="img/icons/32x32-soccer-white.svg" alt="Bola de Futebol">
@@ -191,7 +187,7 @@
         </div>
         
     
-<script src="script.js"></script>
+<script src="/app/script/script.js"></script>
 
 </body>
 </html>

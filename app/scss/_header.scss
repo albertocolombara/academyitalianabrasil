@@ -25,12 +25,17 @@ header {
             &__link {
                 font-weight: bold;
 
-                a{
+                a {
                     text-decoration: none;
                     color: white;
                     font-size: 16px;
                     font-style: normal;
                     line-height: normal;
+                    transition: opacity .5s;
+
+                    &:hover {
+                        opacity: .5;
+                    }
                 }
 
                 .sub-menu {
@@ -64,15 +69,6 @@ header {
                     transition: transform .5s ease;
                     transform: rotate(180deg);
                 }
-            }
-        }
-
-        .menu__social {
-            align-self: center;
-
-            img {
-                width: 24px;
-                margin-left: 10px;
             }
         }
     }

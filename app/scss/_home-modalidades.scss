@@ -23,7 +23,7 @@
             cursor: pointer;
 
             &:hover .modalidade-item__desc{
-                animation: floating .8s infinite alternate linear;
+                animation: floating .6s infinite linear alternate;
             }
 
             &__image {
