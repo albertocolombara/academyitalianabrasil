@@ -134,10 +134,39 @@
         }
     }
 
+    .formando-campeoes {
+    
+        p {
+            width: 100%;
+        }
+        
+    }
+    
+    .metodologia-academy {
+    
+        &__container {
+            padding-inline: 30px;
+            width: 80%;
+        }
+    }
+
     .faca-parte {
 
         &__container {
             margin: 90px 30px;
+        }
+    }
+
+    .main-contato {
+    
+        &__right {
+    
+            .contato-form {
+    
+                input, textarea {
+                    max-width: 100%;
+                }
+            }
         }
     }
 }
@@ -374,6 +403,19 @@
         }
     }
 
+    .formando-campeoes {
+        padding-block: 60px;
+        
+    }
+    
+    .metodologia-academy {
+        padding-block: 60px;
+    
+        &__container {
+            width: 100%;
+        }
+    }
+
     .faca-parte {
         
         &__container {
@@ -381,6 +423,21 @@
             h3 {
                 font-size: 24px;
                 flex: 1.2;
+            }
+        }
+    }
+
+    .main-contato {
+        padding-block: 60px;
+        flex-direction: column;
+    
+        &__left {
+
+            .main-contato__contatos {
+
+                span {
+                    word-break: break-all;
+                }
             }
         }
     }

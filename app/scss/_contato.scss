@@ -1,0 +1,83 @@
+.main-contato {
+    display: flex;
+    padding-block: 120px;
+    gap: 40px;
+
+    &__left, &__right {
+        flex: 1;
+    }
+
+    &__left {
+        background-color: $dark-blue;
+        border-radius: 6px;
+        padding: 30px;
+
+        h2 {
+            -webkit-text-fill-color: white;
+            font-size: 48px;
+        }
+
+        p {
+            opacity: .8;
+        }
+
+        h2, p, span {
+            color: white;
+        }
+
+        &-bottom {
+            margin-top: 40px;
+
+            .main-contato__contatos {
+                margin-bottom: 20px;
+            }
+
+            .main-contato__title {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                margin-bottom: 10px;
+
+                span {
+                    font-weight: bold;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    &__right {
+
+        .contato-form {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                color: $color-primary;
+            }
+
+            input, textarea {
+                margin-block: 10px;
+                max-width: 70%;
+                border: 1px solid $light-grey;
+                border-radius: 3px;
+                padding: 10px;
+                font-family: $font-family;
+                color: $light-grey;
+            }
+
+            input[type="submit"] {
+                background-color: $dark-blue;
+                color: white;
+                cursor: pointer;
+                transition: all .8s ease;
+            }
+
+            input[type="submit"]:hover {
+                border: 1px solid $color-primary;
+                color: $color-primary;
+                background-color: white;
+            }
+        }
+    }
+}

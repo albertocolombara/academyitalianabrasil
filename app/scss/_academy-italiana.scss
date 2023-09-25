@@ -1,0 +1,39 @@
+.formando-campeoes {
+    padding-block: 120px;
+    text-align: center;
+
+    p {
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+}
+
+.metodologia-academy {
+    background-image: url("/img/wrapper-academy.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-block: 120px;
+
+    &__container {
+        padding-inline: 90px;
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        flex-direction: column;
+
+        h2 {
+            -webkit-text-fill-color: $color-primary;
+            color: $color-primary;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .btn-outline {
+            align-self: flex-start;
+        }
+    }
+}

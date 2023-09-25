@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conheça - Academy Italiana Brasil</title>
+    <title>Contato - Academy Italiana Brasil</title>
 
     <link rel="stylesheet" href="dist/style.css">
 </head>
@@ -34,61 +34,47 @@
     </header>
 
     <div class="page-hero">
-        <h1>Conheça</h1>
+        <h1>Contato</h1>
     </div>
 
-    <div class="main-conheca">
-        <div class="conheca-projeto">
-            <div class="conheca-projeto__container">
-                <h2 class="section-title">O projeto</h2>
-                <p class="section-p">A Academy Italiana Brasil é um novo projeto que foi criado seguindo as metodologias da Academy Italiana, uma escolinha de futebol internacional que agora está presente no Brasil.</p>    
+    <section class="main-contato padding-lr">
+        <div class="main-contato__left">
+            <div class="main-contato__left-top">
+                <h2 class="section-title">Venha fazer parte!</h2>
+                <p class="section-p">Fale conosco por meio de nosso email, telefone<br> ou nos envie uma mensagem através do formulário ao lado.</p>
             </div>
-        </div>
-        <div class="conheca-projeto">
-            <div class="conheca-projeto__container conheca-projeto__objetivo">
-                <h2 class="section-title">O objetivo</h2>
-                <div class="conheca-projeto__objetivo-text">
-                    <p class="section-p">Nosso objetivo a longo prazo é ter times competitivos em várias modalidades esportivas, criando um ambiente de competição e diversão para os participantes, também temos a meta de expandir nosso time por todo o Brasil. </p>
-                    <p class="section-p">Queremos proporcionar para nossos atletas, toda a estrutura necessária para os mesmos desenvolverem suas habilidades esportivas. </p>   
+            <div class="main-contato__left-bottom">
+                <div class="main-contato__contatos">
+                    <div class="main-contato__title">
+                        <img width="18px" src="img/icons/mail.svg" alt="Email">
+                        <span>Email</span>
+                    </div>
+                    <span>info@academyitalianabrasil.com.br</span>
                 </div>
-                 
+                <div class="main-contato__contatos">
+                    <div class="main-contato__title">
+                        <img width="18px" src="img/icons/phone.svg" alt="Telefone">
+                        <span>Telefone</span>
+                    </div>
+                    <span>+55 85 988888888</span>
+                </div>
             </div>
         </div>
-        <div class="conheca-projeto">
-            <div class="conheca-projeto__container">
-                <h2 class="section-title">Metodologia</h2>
-                <p class="section-p">Através de um grupo de trabalho enxuto e flexível, mas com experiência consolidada na formação de futebol juvenil, pretendemos trabalhar na valorização dos recursos territoriais, adaptando soluções ao contexto sociocultural, organizacional e específico.</p>    
-            </div>
-        </div>
-    </div>
+        <div class="main-contato__right">
+            <form class="contato-form" action="https://formsubmit.co/info@academyitalianabrasil.com.br" method="POST">
+                <input type="hidden" name="_next" value="/sucesso.html">
 
-    <div class="page-wrapper">
-        <div class="page-wrapper__container">
-            <h3 class="padding-lr"><i>Nossa missão é ser um time completo, e com isso proporcionar toda a estrutura necessária para nossos atletas.</i></h3>
-        </div>
-    </div>
+                <label class="section-p" for="name">Nome</label>
+                <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
 
-    <section class="conheca-esportes padding-lr">
-        <div class="conheca-esportes__left">
-            <h2>Esportes</h2>
-        </div>
-        <div class="conheca-esportes__right">
-            <div class="item-esporte">
-                <img src="img/icons/soccer.svg" alt="Futebol">
-                <span class="section-p">Futebol & Futmesa</span>
-            </div>
-            <div class="item-esporte">
-                <img src="img/icons/volley.svg" alt="Volei">
-                <span class="section-p">Vôlei de praia</span>
-            </div>
-            <div class="item-esporte">
-                <img src="img/icons/tennis.svg" alt="Tenis">
-                <span class="section-p">Tênis de praia</span>
-            </div>
-            <div class="item-esporte">
-                <img src="img/icons/controller.svg" alt="Esports">
-                <span class="section-p">Esports</span>
-            </div>
+                <label class="section-p" for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+
+                <label class="section-p" for="message">Mensagem</label>
+                <textarea name="message" id="message" rows="4" placeholder="Nos escreva uma mensagem!"></textarea>
+
+                <input type="submit" value="Enviar mensagem"></input>
+            </form>
         </div>
     </section>
     
