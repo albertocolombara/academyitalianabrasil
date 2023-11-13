@@ -1,7 +1,6 @@
 .main-times {
     display: flex;
     align-items: center;
-    padding-block: 90px;
 
     &__left, &__right {
         flex: 1;
@@ -53,10 +52,11 @@
 }
 
 .faca-parte {
+
     &__container {
         background-color: $dark-blue;
         color: white;
-        margin: 90px;
+        margin: 120px 90px;
         border-radius: 6px;
         display: flex;
         align-items: center;

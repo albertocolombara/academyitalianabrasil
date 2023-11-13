@@ -1,7 +1,10 @@
 @media (max-width: 800px) {
     .padding-lr {
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-inline: 30px;
+    }
+
+    .padding-tb {
+        padding-block: 60px;
     }
 
     .before-title {
@@ -101,13 +104,6 @@
     .conheca-esportes {
         gap: 20px;
     
-        &__left {
-    
-            & h2 {
-                font-size: 42px;
-            }
-        } 
-    
         &__right {
             gap: 15px;
     
@@ -153,7 +149,7 @@
     .faca-parte {
 
         &__container {
-            margin: 90px 30px;
+            margin: 60px 30px;
         }
     }
 
@@ -213,7 +209,6 @@
     }
 
     .objetivo {
-        padding-top: 80px;
 
         &__top {
 
@@ -236,7 +231,6 @@
     }
 
     .modalidades {
-        padding-top: 80px;
     
         &__top {
             padding-bottom: 50px;
@@ -267,7 +261,6 @@
     }
     
     .escola {
-        padding-bottom: 120px;
         display: flex;
         align-items: center;
         gap: 60px;
@@ -301,7 +294,7 @@
             gap: 30px;
 
             h4, a, span {
-                font-size: 24px;
+                font-size: 18px;
             }
         }
     }
@@ -316,7 +309,7 @@
         
             &__container {
                 flex-direction: column;
-                margin: 0 10px;
+                margin: 0 20px;
                 padding: 30px;
             }
 
@@ -402,11 +395,6 @@
             }
         }
     }
-
-    .formando-campeoes {
-        padding-block: 60px;
-        
-    }
     
     .metodologia-academy {
         padding-block: 60px;
@@ -464,8 +452,7 @@
     }
 
     .padding-lr {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-inline: 20px;
     }
 
     .partners {
@@ -477,7 +464,7 @@
 
     .faca-parte {
         &__container {
-            margin: 90px 10px;
+            margin: 90px 20px;
             flex-direction: column;
             height: 300px;
     
